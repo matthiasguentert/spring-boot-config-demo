@@ -23,10 +23,14 @@ public class DemoApplication {
 	@Value("${message}")
 	String message;
 
+	@Value("${anothermessage}")
+	String anothermessage;
+
 	@Bean
 	CommandLineRunner values() {
 		return args -> {
-			log.info(" Message is: " + message);
+			log.info("=> Message is: " + message);
+			log.info("=> Anothermessage is: " + anothermessage);
 		};
 	}
 
@@ -34,7 +38,6 @@ public class DemoApplication {
 		new SpringApplicationBuilder(DemoApplication.class)
 				//.profiles("prod", "sprint")
 				.run(args);
-		//SpringApplication.run(DemoApplication.class, args);
 	}
 }
 

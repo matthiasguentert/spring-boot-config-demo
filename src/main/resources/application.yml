@@ -2,7 +2,7 @@
 
 #spring.profiles.active=local
 message: this is default
-
+anothermessage: this is another message from default
 # Dev0 profile
 ---
 spring:
@@ -20,3 +20,5 @@ message: this is sprint
 spring:
   profiles: prod
 message: this is prod
+# even if the 'anothermessage' property is not explicitly defined here,
+# it is available in the profile from the default profile

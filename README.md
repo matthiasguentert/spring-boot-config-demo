@@ -36,6 +36,7 @@ docker exec -ti container_name /bin/sh
 
 * More than a single profile at a time can be active 
 * If no profile is specified (`spring.profiles.active=null`) the default one will be used 
+* Properties from the default profile can be used from a specific profile (even if not explicitly defined)
 
 ## Further reading
 
