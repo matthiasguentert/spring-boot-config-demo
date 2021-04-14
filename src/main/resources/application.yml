@@ -1,0 +1,22 @@
+# Default profile, can be used for local development
+
+#spring.profiles.active=local
+message: this is default
+
+# Dev0 profile
+---
+spring:
+  profiles: dev0
+message: this is dev0
+
+# Sprint profile
+---
+spring:
+  profiles: sprint
+message: this is sprint
+
+# Prod profile
+---
+spring:
+  profiles: prod
+message: this is prod
