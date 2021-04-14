@@ -49,7 +49,7 @@ class MyRunner implements CommandLineRunner {
 	}
 }
 
-// Will only run if dev0 profile is active
+// Profile specific bean, will only run if dev0 is active
 @Component
 @Profile(value="dev0")
 class MyRunnerDev0 implements CommandLineRunner {
